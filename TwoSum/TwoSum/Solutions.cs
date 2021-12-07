@@ -11,7 +11,6 @@
         {
             for (int j = 0; j < list.Length; j++)
             {
-
                 if ((list[i] + list[j]) == target)
                 {
                     result[0] = i;
@@ -19,11 +18,10 @@
                     break;
                 }
             }
-
         }
-
         return result;
     }
+
     public static int[] OptimalSolution(int[] listOfNumbers, int targetValue)
     {
         int[] list = listOfNumbers;
@@ -39,7 +37,6 @@
             if (map.ContainsKey(diff))
             {
                 result[0] = map[diff];
-
                 result[1] = i;
             }
             else
